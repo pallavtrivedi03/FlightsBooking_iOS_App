@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B25CC80268B06AB00133F02 /* WhooshApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25CC7F268B06AB00133F02 /* WhooshApp.swift */; };
+		7B25CC82268B06AB00133F02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25CC81268B06AB00133F02 /* ContentView.swift */; };
+		7B25CC84268B06AC00133F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B25CC83268B06AC00133F02 /* Assets.xcassets */; };
+		7B25CC87268B06AC00133F02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B25CC86268B06AC00133F02 /* Preview Assets.xcassets */; };
+		7B25CC8F268B06F000133F02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25CC8E268B06F000133F02 /* HomeViewModel.swift */; };
+		7B25CC94268B074D00133F02 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25CC93268B074D00133F02 /* NetworkManager.swift */; };
+		7B25CC96268B0F5500133F02 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B25CC95268B0F5500133F02 /* Flight.swift */; };
+		7B7662E4268B483100E3D0EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7662E3268B483100E3D0EE /* Extensions.swift */; };
+		7B7662E9268B604E00E3D0EE /* FlightCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7662E8268B604E00E3D0EE /* FlightCardView.swift */; };
+		7B7662EF268B626300E3D0EE /* FlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7662EE268B626300E3D0EE /* FlightDetailView.swift */; };
+		7B7662F2268B647000E3D0EE /* FlightDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7662F1268B647000E3D0EE /* FlightDetailViewModel.swift */; };
+		7B7662F5268B64E800E3D0EE /* FlightDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7662F4268B64E800E3D0EE /* FlightDetail.swift */; };
+		7BC0AF7D268BA23B00EF345F /* FlightDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0AF7C268BA23B00EF345F /* FlightDetailCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B25CC7C268B06AB00133F02 /* Whoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B25CC7F268B06AB00133F02 /* WhooshApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhooshApp.swift; sourceTree = "<group>"; };
+		7B25CC81268B06AB00133F02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B25CC83268B06AC00133F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B25CC86268B06AC00133F02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B25CC8E268B06F000133F02 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7B25CC93268B074D00133F02 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7B25CC95268B0F5500133F02 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		7B25CC98268B12AC00133F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7B7662E3268B483100E3D0EE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B7662E8268B604E00E3D0EE /* FlightCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCardView.swift; sourceTree = "<group>"; };
+		7B7662EE268B626300E3D0EE /* FlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailView.swift; sourceTree = "<group>"; };
+		7B7662F1268B647000E3D0EE /* FlightDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewModel.swift; sourceTree = "<group>"; };
+		7B7662F4268B64E800E3D0EE /* FlightDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetail.swift; sourceTree = "<group>"; };
+		7BC0AF7C268BA23B00EF345F /* FlightDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B25CC79268B06AB00133F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B25CC73268B06AB00133F02 = {
+			isa = PBXGroup;
+			children = (
+				7B25CC7E268B06AB00133F02 /* Whoosh */,
+				7B25CC7D268B06AB00133F02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B25CC7D268B06AB00133F02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B25CC7C268B06AB00133F02 /* Whoosh.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B25CC7E268B06AB00133F02 /* Whoosh */ = {
+			isa = PBXGroup;
+			children = (
+				7B25CC98268B12AC00133F02 /* Info.plist */,
+				7B7662E2268B481F00E3D0EE /* Utils */,
+				7B25CC90268B073600133F02 /* Managers */,
+				7B25CC8D268B06C900133F02 /* Home */,
+				7B7662EB268B623D00E3D0EE /* Detail */,
+				7B25CC7F268B06AB00133F02 /* WhooshApp.swift */,
+				7B25CC81268B06AB00133F02 /* ContentView.swift */,
+				7B25CC83268B06AC00133F02 /* Assets.xcassets */,
+				7B25CC85268B06AC00133F02 /* Preview Content */,
+			);
+			path = Whoosh;
+			sourceTree = "<group>";
+		};
+		7B25CC85268B06AC00133F02 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7B25CC86268B06AC00133F02 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B25CC8D268B06C900133F02 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B7662E7268B601100E3D0EE /* Model */,
+				7B7662E6268B600500E3D0EE /* Views */,
+				7B7662E5268B5FFE00E3D0EE /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7B25CC90268B073600133F02 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7B25CC93268B074D00133F02 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7B7662E2268B481F00E3D0EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7B7662E3268B483100E3D0EE /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7B7662E5268B5FFE00E3D0EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B25CC8E268B06F000133F02 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7B7662E6268B600500E3D0EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B7662E8268B604E00E3D0EE /* FlightCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B7662E7268B601100E3D0EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B25CC95268B0F5500133F02 /* Flight.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B7662EB268B623D00E3D0EE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7B7662F3268B64D400E3D0EE /* Model */,
+				7B7662F0268B645800E3D0EE /* ViewModel */,
+				7B7662EC268B624B00E3D0EE /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7B7662EC268B624B00E3D0EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B7662EE268B626300E3D0EE /* FlightDetailView.swift */,
+				7BC0AF7C268BA23B00EF345F /* FlightDetailCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B7662F0268B645800E3D0EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B7662F1268B647000E3D0EE /* FlightDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7B7662F3268B64D400E3D0EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B7662F4268B64E800E3D0EE /* FlightDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B25CC7B268B06AB00133F02 /* Whoosh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B25CC8A268B06AC00133F02 /* Build configuration list for PBXNativeTarget "Whoosh" */;
+			buildPhases = (
+				7B25CC78268B06AB00133F02 /* Sources */,
+				7B25CC79268B06AB00133F02 /* Frameworks */,
+				7B25CC7A268B06AB00133F02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Whoosh;
+			productName = Whoosh;
+			productReference = 7B25CC7C268B06AB00133F02 /* Whoosh.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B25CC74268B06AB00133F02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					7B25CC7B268B06AB00133F02 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 7B25CC77268B06AB00133F02 /* Build configuration list for PBXProject "Whoosh" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B25CC73268B06AB00133F02;
+			productRefGroup = 7B25CC7D268B06AB00133F02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B25CC7B268B06AB00133F02 /* Whoosh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B25CC7A268B06AB00133F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B25CC87268B06AC00133F02 /* Preview Assets.xcassets in Resources */,
+				7B25CC84268B06AC00133F02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B25CC78268B06AB00133F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B25CC94268B074D00133F02 /* NetworkManager.swift in Sources */,
+				7B7662E4268B483100E3D0EE /* Extensions.swift in Sources */,
+				7B7662F5268B64E800E3D0EE /* FlightDetail.swift in Sources */,
+				7B25CC82268B06AB00133F02 /* ContentView.swift in Sources */,
+				7B25CC96268B0F5500133F02 /* Flight.swift in Sources */,
+				7B7662F2268B647000E3D0EE /* FlightDetailViewModel.swift in Sources */,
+				7B25CC8F268B06F000133F02 /* HomeViewModel.swift in Sources */,
+				7B7662EF268B626300E3D0EE /* FlightDetailView.swift in Sources */,
+				7B7662E9268B604E00E3D0EE /* FlightCardView.swift in Sources */,
+				7BC0AF7D268BA23B00EF345F /* FlightDetailCard.swift in Sources */,
+				7B25CC80268B06AB00133F02 /* WhooshApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7B25CC88268B06AC00133F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B25CC89268B06AC00133F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B25CC8B268B06AC00133F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Whoosh/Preview Content\"";
+				DEVELOPMENT_TEAM = XA42W6KV79;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Whoosh/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Whoosh;
+				INFOPLIST_KEY_CFBundleName = Whoosh;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.develop.Whoosh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B25CC8C268B06AC00133F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Whoosh/Preview Content\"";
+				DEVELOPMENT_TEAM = XA42W6KV79;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Whoosh/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Whoosh;
+				INFOPLIST_KEY_CFBundleName = Whoosh;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.develop.Whoosh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B25CC77268B06AB00133F02 /* Build configuration list for PBXProject "Whoosh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B25CC88268B06AC00133F02 /* Debug */,
+				7B25CC89268B06AC00133F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B25CC8A268B06AC00133F02 /* Build configuration list for PBXNativeTarget "Whoosh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B25CC8B268B06AC00133F02 /* Debug */,
+				7B25CC8C268B06AC00133F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B25CC74268B06AB00133F02 /* Project object */;
+}
